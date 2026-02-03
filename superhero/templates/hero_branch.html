@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+ {% block content %}
+<h1>This is Hero branch</h1>
+{% for hero in heroes %}
+<h2>{{hero.name}}</h2>
+{% endfor %}
+
+{% for branch in branches %}
+<p>{{branch.branch_name}}</p>
+
+{% endfor %}
+
+{% endblock %}
